@@ -20,20 +20,22 @@ import hexagonal.ports.out.LocacaoRepositoryPort;
 public class ApplicationConfig {
 
     @Bean
+    public JogoMapper jogoMapper() {
+        return new JogoMapper();
+    }
+
+    @Bean
+    public PlataformaMapper plataformaMapper() {
+        return new PlataformaMapper();
+    }
+
+    @Bean
     public JogoPlataformaMapper jogoPlataformaMapper(JogoMapper jogoMapper,
                                                      PlataformaMapper plataformaMapper) {
         return new JogoPlataformaMapper(jogoMapper, plataformaMapper);
     }
 
-    @Bean
-    public JogoMapper jogoMapper(JogoPlataformaMapper jogoPlataformaMapper) {
-        return new JogoMapper(jogoPlataformaMapper);
-    }
 
-    @Bean
-    public PlataformaMapper plataformaMapper(JogoPlataformaMapper jogoPlataformaMapper) {
-        return new PlataformaMapper(jogoPlataformaMapper);
-    }
 
     @Bean
     public LocacaoService servicoDeLocacao(ClienteRepositoryPort clienteRepo,
