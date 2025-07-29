@@ -4,8 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="">
+    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/LocacaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/ClienteRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoPlataformaRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/LocacaoRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/PlataformaRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/ClienteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/ItemLocacaoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/JogoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/JogoPlataformaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/LocacaoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/PlataformaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/ClienteJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/JogoJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/JogoPlataformaJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/LocacaoJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/PlataformaJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/ClienteMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/ItemLocacaoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/JogoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/JogoPlataformaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/LocacaoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/PlataformaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoRepositoryPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/PlataformaRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Acessorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Acessorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/ItemLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/ItemLocacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Jogo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/JogoPlataforma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/JogoPlataforma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Locacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Plataforma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Plataforma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/UtilizacaoConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/UtilizacaoConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/service/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/service/LocacaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/usecase/CalcularCustoTotalLocacaoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CalcularCustoTotalLocacaoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/usecase/CriarLocacaoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CriarLocacaoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/usecase/InserirJogoLocacaoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/InserirJogoLocacaoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ports/in/CalcularCustoTotalLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CalcularCustoTotalLocacaoInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ports/in/CriarLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CriarLocacaoInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ports/in/InserirJogoLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/InserirJogoLocacaoInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ports/out/ClienteRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/ClienteRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ports/out/JogoPlataformaRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoPlataformaRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ports/out/LocacaoRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/LocacaoRepositoryPort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,17 +62,39 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RafaelSimasS&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RafaelSimasS/Eng_II_Etapa_03_Hex_C4.git&quot;,
+    &quot;accountId&quot;: &quot;bfdb27de-aa45-4b8c-bcd5-a6d2bf59c6c9&quot;
+  }
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="ygse2d8i" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="30Vzxb2LxAeW4GraRQvDBgQHnMq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,13 +102,38 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Eng_II-Etapa_03_Hex_C4" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hexagonal.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hexagonal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -56,11 +150,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753727780957</updated>
-      <workItem from="1753727782081" duration="11000" />
+      <workItem from="1753727782081" duration="8975000" />
+      <workItem from="1753793605985" duration="9464000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1753742681598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753742681598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
