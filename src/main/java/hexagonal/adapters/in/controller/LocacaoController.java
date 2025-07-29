@@ -3,9 +3,9 @@ package hexagonal.adapters.in.controller;
 import hexagonal.core.domain.model.Locacao;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ports.in.CalcularCustoTotalLocacaoInputPort;
-import ports.in.CriarLocacaoInputPort;
-import ports.in.InserirJogoLocacaoInputPort;
+import hexagonal.ports.in.CalcularCustoTotalLocacaoInputPort;
+import hexagonal.ports.in.CriarLocacaoInputPort;
+import hexagonal.ports.in.InserirJogoLocacaoInputPort;
 
 import java.net.URI;
 import java.time.LocalDate;

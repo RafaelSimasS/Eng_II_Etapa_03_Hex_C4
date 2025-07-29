@@ -4,55 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/LocacaoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/ClienteRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoPlataformaRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/LocacaoRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/PlataformaRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/ClienteEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/ItemLocacaoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/JogoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/JogoPlataformaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/LocacaoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/PlataformaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/ClienteJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/JogoJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/JogoPlataformaJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/LocacaoJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/PlataformaJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/ClienteMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/ItemLocacaoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/JogoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/JogoPlataformaMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/LocacaoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/PlataformaMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoRepositoryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/PlataformaRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Acessorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Acessorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/ItemLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/ItemLocacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Jogo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/JogoPlataforma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/JogoPlataforma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Locacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/Plataforma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Plataforma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/model/UtilizacaoConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/UtilizacaoConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/service/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/service/LocacaoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/usecase/CalcularCustoTotalLocacaoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CalcularCustoTotalLocacaoUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/usecase/CriarLocacaoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CriarLocacaoUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/domain/usecase/InserirJogoLocacaoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/InserirJogoLocacaoUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ports/in/CalcularCustoTotalLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CalcularCustoTotalLocacaoInputPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ports/in/CriarLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CriarLocacaoInputPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ports/in/InserirJogoLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/InserirJogoLocacaoInputPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ports/out/ClienteRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/ClienteRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ports/out/JogoPlataformaRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoPlataformaRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ports/out/LocacaoRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/LocacaoRepositoryPort.java" afterDir="false" />
+    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="feat: adicionado adapters das regras de negócios iniciais">
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/JogoPlataformaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/JogoPlataformaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CriarLocacaoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CriarLocacaoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CalcularCustoTotalLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CalcularCustoTotalLocacaoInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CriarLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CriarLocacaoInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/InserirJogoLocacaoInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/InserirJogoLocacaoInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/ClienteRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/ClienteRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoPlataformaRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoPlataformaRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/LocacaoRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/LocacaoRepositoryPort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +61,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Application.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
@@ -151,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1753727780957</updated>
       <workItem from="1753727782081" duration="8975000" />
-      <workItem from="1753793605985" duration="9464000" />
+      <workItem from="1753793605985" duration="9958000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -161,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753742681598</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: adicionado adapters das regras de negócios iniciais">
+      <option name="closed" value="true" />
+      <created>1753804180844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753804180844</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="feat: adicionado adapters das regras de negócios iniciais" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adicionado adapters das regras de negócios iniciais" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 package hexagonal.core.domain.usecase;
 
 import hexagonal.core.domain.service.LocacaoService;
-import ports.in.CalcularCustoTotalLocacaoInputPort;
+import hexagonal.ports.in.CalcularCustoTotalLocacaoInputPort;
 
 
 import java.math.BigDecimal;

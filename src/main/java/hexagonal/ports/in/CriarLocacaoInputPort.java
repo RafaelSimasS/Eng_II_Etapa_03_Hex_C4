@@ -1,4 +1,4 @@
-package ports.in;
+package hexagonal.ports.in;
 
 import hexagonal.core.domain.model.Locacao;
 

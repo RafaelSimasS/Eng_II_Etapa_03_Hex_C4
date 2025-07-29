@@ -6,9 +6,9 @@ import hexagonal.adapters.out.repositories.mapper.ItemLocacaoMapper;
 import hexagonal.adapters.out.repositories.mapper.LocacaoMapper;
 import hexagonal.core.domain.model.Locacao;
 import org.springframework.stereotype.Component;
-import ports.out.ClienteRepositoryPort;
-import ports.out.JogoPlataformaRepositoryPort;
-import ports.out.LocacaoRepositoryPort;
+import hexagonal.ports.out.ClienteRepositoryPort;
+import hexagonal.ports.out.JogoPlataformaRepositoryPort;
+import hexagonal.ports.out.LocacaoRepositoryPort;
 
 import java.util.Optional;
 

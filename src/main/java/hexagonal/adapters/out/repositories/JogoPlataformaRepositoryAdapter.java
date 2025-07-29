@@ -7,7 +7,7 @@ import hexagonal.adapters.out.repositories.mapper.JogoPlataformaMapper;
 import hexagonal.adapters.out.repositories.mapper.PlataformaMapper;
 import hexagonal.core.domain.model.JogoPlataforma;
 import org.springframework.stereotype.Component;
-import ports.out.JogoPlataformaRepositoryPort;
+import hexagonal.ports.out.JogoPlataformaRepositoryPort;
 
 import java.util.Optional;
 

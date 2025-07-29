@@ -2,7 +2,7 @@ package hexagonal.core.domain.usecase;
 
 import hexagonal.core.domain.model.Locacao;
 import hexagonal.core.domain.service.LocacaoService;
-import ports.in.InserirJogoLocacaoInputPort;
+import hexagonal.ports.in.InserirJogoLocacaoInputPort;
 
 
 public class InserirJogoLocacaoUseCase implements InserirJogoLocacaoInputPort {

@@ -1,4 +1,4 @@
-package ports.out;
+package hexagonal.ports.out;
 
 import hexagonal.core.domain.model.JogoPlataforma;
 

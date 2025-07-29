@@ -5,7 +5,7 @@ import hexagonal.adapters.out.repositories.jpa.ClienteJpaRepository;
 import hexagonal.adapters.out.repositories.mapper.ClienteMapper;
 import hexagonal.core.domain.model.Cliente;
 import org.springframework.stereotype.Component;
-import ports.out.ClienteRepositoryPort;
+import hexagonal.ports.out.ClienteRepositoryPort;
 
 import java.util.Optional;
 

@@ -3,7 +3,7 @@ package hexagonal.adapters.out.repositories.mapper;
 import hexagonal.adapters.out.repositories.entity.LocacaoEntity;
 import hexagonal.core.domain.model.Cliente;
 import hexagonal.core.domain.model.Locacao;
-import ports.out.ClienteRepositoryPort;
+import hexagonal.ports.out.ClienteRepositoryPort;
 
 import java.util.stream.Collectors;
 

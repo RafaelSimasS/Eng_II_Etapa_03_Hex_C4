@@ -9,12 +9,12 @@ import hexagonal.core.domain.usecase.CriarLocacaoUseCase;
 import hexagonal.core.domain.usecase.InserirJogoLocacaoUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ports.in.CalcularCustoTotalLocacaoInputPort;
-import ports.in.CriarLocacaoInputPort;
-import ports.in.InserirJogoLocacaoInputPort;
-import ports.out.ClienteRepositoryPort;
-import ports.out.JogoPlataformaRepositoryPort;
-import ports.out.LocacaoRepositoryPort;
+import hexagonal.ports.in.CalcularCustoTotalLocacaoInputPort;
+import hexagonal.ports.in.CriarLocacaoInputPort;
+import hexagonal.ports.in.InserirJogoLocacaoInputPort;
+import hexagonal.ports.out.ClienteRepositoryPort;
+import hexagonal.ports.out.JogoPlataformaRepositoryPort;
+import hexagonal.ports.out.LocacaoRepositoryPort;
 
 @Configuration
 public class ApplicationConfig {

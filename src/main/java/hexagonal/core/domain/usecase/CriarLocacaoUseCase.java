@@ -2,7 +2,7 @@ package hexagonal.core.domain.usecase;
 
 import hexagonal.core.domain.model.Locacao;
 import hexagonal.core.domain.service.LocacaoService;
-import ports.in.CriarLocacaoInputPort;
+import hexagonal.ports.in.CriarLocacaoInputPort;
 
 
 import java.time.LocalDate;

@@ -4,9 +4,9 @@ import hexagonal.core.domain.model.Cliente;
 import hexagonal.core.domain.model.ItemLocacao;
 import hexagonal.core.domain.model.JogoPlataforma;
 import hexagonal.core.domain.model.Locacao;
-import ports.out.ClienteRepositoryPort;
-import ports.out.JogoPlataformaRepositoryPort;
-import ports.out.LocacaoRepositoryPort;
+import hexagonal.ports.out.ClienteRepositoryPort;
+import hexagonal.ports.out.JogoPlataformaRepositoryPort;
+import hexagonal.ports.out.LocacaoRepositoryPort;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

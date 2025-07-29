@@ -3,7 +3,7 @@ package hexagonal.adapters.out.repositories.mapper;
 import hexagonal.adapters.out.repositories.entity.ItemLocacaoEntity;
 import hexagonal.core.domain.model.ItemLocacao;
 import hexagonal.core.domain.model.JogoPlataforma;
-import ports.out.JogoPlataformaRepositoryPort;
+import hexagonal.ports.out.JogoPlataformaRepositoryPort;
 
 public class ItemLocacaoMapper {
     private final JogoPlataformaRepositoryPort jogoPlatRepo;

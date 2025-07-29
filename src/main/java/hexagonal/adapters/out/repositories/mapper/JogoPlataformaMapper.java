@@ -1,11 +1,7 @@
 package hexagonal.adapters.out.repositories.mapper;
 
 import hexagonal.adapters.out.repositories.entity.JogoPlataformaEntity;
-import hexagonal.core.domain.model.Jogo;
 import hexagonal.core.domain.model.JogoPlataforma;
-import hexagonal.core.domain.model.Plataforma;
-import hexagonal.ports.out.JogoRepositoryPort;
-import hexagonal.ports.out.PlataformaRepositoryPort;
 
 public class JogoPlataformaMapper {
 
