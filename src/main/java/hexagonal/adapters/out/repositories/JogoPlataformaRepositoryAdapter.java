@@ -36,4 +36,8 @@ public class JogoPlataformaRepositoryAdapter implements JogoPlataformaRepository
         JogoPlataformaEntity saved = jpa.save(ent);
         return mapper.toDomain(saved);
     }
+    @Override
+    public void deleteById(Long id) {
+        jpa.deleteById(id);
+    }
 }

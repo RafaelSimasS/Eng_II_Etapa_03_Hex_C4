@@ -32,4 +32,13 @@ public class JogoRepositoryAdapter implements JogoRepositoryPort {
         JogoEntity saved = jpa.save(ent);
         return mapper.toDomain(saved);
     }
+    @Override
+    public void deleteById(Long id) {
+        jpa.deleteById(id);
+    }
+    @Override
+    public Optional<Jogo> findByTitulo(String titulo) {
+        return jpa.findByTitulo(titulo)
+                .map(mapper::toDomain);
+    }
 }

@@ -4,27 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="fix: corrigir ciclo de dependecias">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/ClienteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/LocacaoAddJogoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/LocacaoCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CreateClienteUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/DeleteClienteUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/GetClienteUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/UpdateClienteUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CreateClienteInputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/DeleteClienteInputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/GetClienteInputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/UpdateClienteInputPort.java" afterDir="false" />
+    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="feat: adicionar controller para criação de clientes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/JogoPlataformaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/JogoPlataformaCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/JogoPlataformaUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/PlataformaCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/service/JogoPlataformaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/service/PlataformaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CreateJogoPlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CreatePlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/DeleteJogoPlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/DeletePlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/GetJogoPlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/GetPlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/UpdateJogoPlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/UpdatePlataformaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CreateJogoPlataformaInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CreatePlataformaInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/DeleteJogoPlataformaInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/DeletePlataformaInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/GetJogoPlataformaInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/GetPlataformaInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/UpdateJogoPlataformaInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/UpdatePlataformaInputPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/ClienteRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/ClienteRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoPlataformaRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoPlataformaRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/JogoRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/PlataformaRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/PlataformaRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/JogoJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/JogoJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/ClienteRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/ClienteRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoPlataformaRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoPlataformaRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/JogoRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/PlataformaRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/PlataformaRepositoryPort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +99,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -134,7 +146,8 @@
       <updated>1753727780957</updated>
       <workItem from="1753727782081" duration="8975000" />
       <workItem from="1753793605985" duration="12370000" />
-      <workItem from="1753892958181" duration="3695000" />
+      <workItem from="1753892958181" duration="4157000" />
+      <workItem from="1753901678942" duration="2644000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -168,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753806223611</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: adicionar controller para criação de clientes">
+      <option name="closed" value="true" />
+      <created>1753901351354</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753901351354</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +211,7 @@
     <MESSAGE value="feat: adicionado adapters das regras de negócios iniciais" />
     <MESSAGE value="fix: corrigindo nome dos pacotes" />
     <MESSAGE value="fix: corrigir ciclo de dependecias" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: corrigir ciclo de dependecias" />
+    <MESSAGE value="feat: adicionar controller para criação de clientes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adicionar controller para criação de clientes" />
   </component>
 </project>

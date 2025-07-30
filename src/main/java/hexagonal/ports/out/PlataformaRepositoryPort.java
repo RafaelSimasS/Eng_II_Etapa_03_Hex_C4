@@ -7,4 +7,5 @@ import java.util.Optional;
 public interface PlataformaRepositoryPort {
     Optional<Plataforma> findById(Long id);
     Plataforma save(Plataforma plataforma);
+    void deleteById(Long id);
 }

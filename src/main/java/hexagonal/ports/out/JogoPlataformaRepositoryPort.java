@@ -7,4 +7,5 @@ import java.util.Optional;
 public interface JogoPlataformaRepositoryPort {
     JogoPlataforma save(JogoPlataforma jp);
     Optional<JogoPlataforma> findById(Long id);
+    void deleteById(Long id);
 }

@@ -3,14 +3,14 @@ package hexagonal.config;
 import hexagonal.adapters.out.repositories.mapper.JogoMapper;
 import hexagonal.adapters.out.repositories.mapper.JogoPlataformaMapper;
 import hexagonal.adapters.out.repositories.mapper.PlataformaMapper;
+import hexagonal.core.domain.service.JogoPlataformaService;
 import hexagonal.core.domain.service.LocacaoService;
+import hexagonal.core.domain.service.PlataformaService;
 import hexagonal.core.domain.usecase.*;
 import hexagonal.ports.in.*;
+import hexagonal.ports.out.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import hexagonal.ports.out.ClienteRepositoryPort;
-import hexagonal.ports.out.JogoPlataformaRepositoryPort;
-import hexagonal.ports.out.LocacaoRepositoryPort;
 
 @Configuration
 public class ApplicationConfig {
@@ -73,7 +73,55 @@ public class ApplicationConfig {
         return new DeleteClienteUseCase(repo);
     }
 
+    @Bean
+    public JogoPlataformaService servicoJogoPlataforma(JogoRepositoryPort jogoRepo,
+                                                       PlataformaRepositoryPort plataformaRepo,
+                                                       JogoPlataformaRepositoryPort assocRepo) {
+        return new JogoPlataformaService(jogoRepo, plataformaRepo, assocRepo);
+    }
 
+    @Bean
+    public CreateJogoPlataformaInputPort createJogoPlataformaUseCase(JogoPlataformaService s) {
+        return new CreateJogoPlataformaUseCase(s);
+    }
 
+    @Bean
+    public GetJogoPlataformaInputPort getJogoPlataformaUseCase(JogoPlataformaService s) {
+        return new GetJogoPlataformaUseCase(s);
+    }
 
+    @Bean
+    public UpdateJogoPlataformaInputPort updateJogoPlataformaUseCase(JogoPlataformaService s) {
+        return new UpdateJogoPlataformaUseCase(s);
+    }
+
+    @Bean
+    public DeleteJogoPlataformaInputPort deleteJogoPlataformaUseCase(JogoPlataformaService s) {
+        return new DeleteJogoPlataformaUseCase(s);
+    }
+
+    @Bean
+    public PlataformaService servicoPlataforma(PlataformaRepositoryPort repo) {
+        return new PlataformaService(repo);
+    }
+
+    @Bean
+    public CreatePlataformaInputPort createPlataformaUseCase(PlataformaService s) {
+        return new CreatePlataformaUseCase(s);
+    }
+
+    @Bean
+    public GetPlataformaInputPort getPlataformaUseCase(PlataformaService s) {
+        return new GetPlataformaUseCase(s);
+    }
+
+    @Bean
+    public UpdatePlataformaInputPort updatePlataformaUseCase(PlataformaService s) {
+        return new UpdatePlataformaUseCase(s);
+    }
+
+    @Bean
+    public DeletePlataformaInputPort deletePlataformaUseCase(PlataformaService s) {
+        return new DeletePlataformaUseCase(s);
+    }
 }
