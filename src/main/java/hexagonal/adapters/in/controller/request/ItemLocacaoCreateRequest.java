@@ -1,30 +1,14 @@
-package hexagonal.adapters.out.repositories.entity;
+package hexagonal.adapters.in.controller.request;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "itens_locacao")
-public class ItemLocacaoEntity {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+public class ItemLocacaoCreateRequest {
     private Long jogoPlataformaId;
     private int dias;
 
-    // getters & setters
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public ItemLocacaoCreateRequest() {}
 
     public Long getJogoPlataformaId() {
         return jogoPlataformaId;
     }
-
     public void setJogoPlataformaId(Long jogoPlataformaId) {
         this.jogoPlataformaId = jogoPlataformaId;
     }
@@ -32,7 +16,6 @@ public class ItemLocacaoEntity {
     public int getDias() {
         return dias;
     }
-
     public void setDias(int dias) {
         this.dias = dias;
     }

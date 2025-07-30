@@ -4,9 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="feat: adicionar controllers para criação de jogos de plataforma e plataforma">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/service/ClienteService.java" afterDir="false" />
+    <list default="true" id="a27cd898-e83a-4619-a7b7-519a4d09fc65" name="Changes" comment="feat: mudar cliente usecases para usar service ao invés das portas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/ItemLocacaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/ItemLocacaoCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/in/controller/request/ItemLocacaoUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/ItemLocacaoRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/jpa/ItemLocacaoJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/service/ServicoItemLocacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/CreateItemLocacaoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/DeleteItemLocacaoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/GetAllItemLocacaoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/GetItemLocacaoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/usecase/UpdateItemLocacaoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/CreateItemLocacaoInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/DeleteItemLocacaoInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/GetAllItemLocacaoInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/GetItemLocacaoInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/in/UpdateItemLocacaoInputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexagonal/ports/out/ItemLocacaoRepositoryPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/ItemLocacaoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/entity/ItemLocacaoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/ItemLocacaoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/adapters/out/repositories/mapper/ItemLocacaoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/ItemLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexagonal/core/domain/model/ItemLocacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +138,7 @@
       <workItem from="1753727782081" duration="8975000" />
       <workItem from="1753793605985" duration="12370000" />
       <workItem from="1753892958181" duration="4157000" />
-      <workItem from="1753901678942" duration="3367000" />
+      <workItem from="1753901678942" duration="7541000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -168,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753904475016</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: mudar cliente usecases para usar service ao invés das portas">
+      <option name="closed" value="true" />
+      <created>1753905454156</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753905454156</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +220,7 @@
     <MESSAGE value="fix: corrigir ciclo de dependecias" />
     <MESSAGE value="feat: adicionar controller para criação de clientes" />
     <MESSAGE value="feat: adicionar controllers para criação de jogos de plataforma e plataforma" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adicionar controllers para criação de jogos de plataforma e plataforma" />
+    <MESSAGE value="feat: mudar cliente usecases para usar service ao invés das portas" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: mudar cliente usecases para usar service ao invés das portas" />
   </component>
 </project>

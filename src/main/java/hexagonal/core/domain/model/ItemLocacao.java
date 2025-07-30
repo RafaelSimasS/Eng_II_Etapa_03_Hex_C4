@@ -3,20 +3,30 @@ package hexagonal.core.domain.model;
 import java.math.BigDecimal;
 
 public class ItemLocacao {
+    private Long id;
     private JogoPlataforma jogoPlataforma;
     private int dias;
-    private int quantidade;
 
-    public ItemLocacao(JogoPlataforma jogoPlataforma, int dias, int quantidade) {
+
+    public ItemLocacao(JogoPlataforma jogoPlataforma, int dias) {
         this.jogoPlataforma = jogoPlataforma;
         this.dias = dias;
-        this.quantidade = quantidade;
+    }
+
+    public ItemLocacao(Long id, JogoPlataforma jogoPlataforma, int dias) {
+        this.id = id;
+        this.jogoPlataforma = jogoPlataforma;
+        this.dias = dias;
+
     }
     public BigDecimal custo() {
         return jogoPlataforma.getPrecoDiario()
-                .multiply(BigDecimal.valueOf(dias))
-                .multiply(BigDecimal.valueOf(quantidade));
+                .multiply(BigDecimal.valueOf(dias));
     }
+
+    public Long getId() { return id; }
+
+    public void setId(Long id) { this.id = id; }
 
     public JogoPlataforma getJogoPlataforma() {
         return jogoPlataforma;
@@ -32,13 +42,5 @@ public class ItemLocacao {
 
     public void setDias(int dias) {
         this.dias = dias;
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
     }
 }

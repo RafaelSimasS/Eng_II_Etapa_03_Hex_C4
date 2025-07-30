@@ -6,23 +6,24 @@ import hexagonal.core.domain.model.JogoPlataforma;
 import hexagonal.ports.out.JogoPlataformaRepositoryPort;
 
 public class ItemLocacaoMapper {
-    private final JogoPlataformaRepositoryPort jogoPlatRepo;
 
-    public ItemLocacaoMapper(JogoPlataformaRepositoryPort jogoPlatRepo) {
-        this.jogoPlatRepo = jogoPlatRepo;
+    private final JogoPlataformaRepositoryPort jpPort;
+
+    public ItemLocacaoMapper(JogoPlataformaRepositoryPort jpPort) {
+        this.jpPort = jpPort;
     }
 
     public ItemLocacao toDomain(ItemLocacaoEntity ent) {
-        JogoPlataforma jp = jogoPlatRepo.findById(ent.getJogoPlataformaId())
+        JogoPlataforma jp = jpPort.findById(ent.getJogoPlataformaId())
                 .orElseThrow(() -> new IllegalArgumentException("JogoPlataforma não encontrado: " + ent.getJogoPlataformaId()));
-        return new ItemLocacao(jp, ent.getDias(), ent.getQuantidade());
+        return new ItemLocacao(ent.getId(), jp, ent.getDias());
     }
 
     public ItemLocacaoEntity toEntity(ItemLocacao domain) {
         ItemLocacaoEntity ent = new ItemLocacaoEntity();
+        ent.setId(domain.getId());
         ent.setJogoPlataformaId(domain.getJogoPlataforma().getId());
         ent.setDias(domain.getDias());
-        ent.setQuantidade(domain.getQuantidade());
         return ent;
     }
 }

@@ -3,10 +3,7 @@ package hexagonal.config;
 import hexagonal.adapters.out.repositories.mapper.JogoMapper;
 import hexagonal.adapters.out.repositories.mapper.JogoPlataformaMapper;
 import hexagonal.adapters.out.repositories.mapper.PlataformaMapper;
-import hexagonal.core.domain.service.ClienteService;
-import hexagonal.core.domain.service.JogoPlataformaService;
-import hexagonal.core.domain.service.LocacaoService;
-import hexagonal.core.domain.service.PlataformaService;
+import hexagonal.core.domain.service.*;
 import hexagonal.core.domain.usecase.*;
 import hexagonal.ports.in.*;
 import hexagonal.ports.out.*;
@@ -129,5 +126,32 @@ public class ApplicationConfig {
     @Bean
     public DeletePlataformaInputPort deletePlataformaUseCase(PlataformaService s) {
         return new DeletePlataformaUseCase(s);
+    }
+
+    @Bean
+    public ServicoItemLocacao servicoItemLocacao(ItemLocacaoRepositoryPort repo,
+                                                 JogoPlataformaRepositoryPort jpRepo) {
+        return new ServicoItemLocacao(repo, jpRepo);
+    }
+
+    @Bean
+    public CreateItemLocacaoInputPort createItemLocacaoUseCase(ServicoItemLocacao s) {
+        return new CreateItemLocacaoUseCase(s);
+    }
+    @Bean
+    public GetItemLocacaoInputPort getItemLocacaoUseCase(ServicoItemLocacao s) {
+        return new GetItemLocacaoUseCase(s);
+    }
+    @Bean
+    public GetAllItemLocacaoInputPort getAllItemLocacaoUseCase(ServicoItemLocacao s) {
+        return new GetAllItemLocacaoUseCase(s);
+    }
+    @Bean
+    public UpdateItemLocacaoInputPort updateItemLocacaoUseCase(ServicoItemLocacao s) {
+        return new UpdateItemLocacaoUseCase(s);
+    }
+    @Bean
+    public DeleteItemLocacaoInputPort deleteItemLocacaoUseCase(ServicoItemLocacao s) {
+        return new DeleteItemLocacaoUseCase(s);
     }
 }
