@@ -3,6 +3,7 @@ package hexagonal.config;
 import hexagonal.adapters.out.repositories.mapper.JogoMapper;
 import hexagonal.adapters.out.repositories.mapper.JogoPlataformaMapper;
 import hexagonal.adapters.out.repositories.mapper.PlataformaMapper;
+import hexagonal.core.domain.service.ClienteService;
 import hexagonal.core.domain.service.JogoPlataformaService;
 import hexagonal.core.domain.service.LocacaoService;
 import hexagonal.core.domain.service.PlataformaService;
@@ -54,23 +55,28 @@ public class ApplicationConfig {
     }
 
     @Bean
-    public CreateClienteInputPort createClienteUseCase(ClienteRepositoryPort repo) {
-        return new CreateClienteUseCase(repo);
+    public ClienteService servicoCliente(ClienteRepositoryPort repo) {
+        return new ClienteService(repo);
     }
 
     @Bean
-    public GetClienteInputPort getClienteUseCase(ClienteRepositoryPort repo) {
-        return new GetClienteUseCase(repo);
+    public CreateClienteInputPort createClienteUseCase(ClienteService s) {
+        return new CreateClienteUseCase(s);
     }
 
     @Bean
-    public UpdateClienteInputPort updateClienteUseCase(ClienteRepositoryPort repo) {
-        return new UpdateClienteUseCase(repo);
+    public GetClienteInputPort getClienteUseCase(ClienteService s) {
+        return new GetClienteUseCase(s);
     }
 
     @Bean
-    public DeleteClienteInputPort deleteClienteUseCase(ClienteRepositoryPort repo) {
-        return new DeleteClienteUseCase(repo);
+    public UpdateClienteInputPort updateClienteUseCase(ClienteService s) {
+        return new UpdateClienteUseCase(s);
+    }
+
+    @Bean
+    public DeleteClienteInputPort deleteClienteUseCase(ClienteService s) {
+        return new DeleteClienteUseCase(s);
     }
 
     @Bean

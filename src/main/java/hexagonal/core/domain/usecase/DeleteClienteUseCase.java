@@ -1,18 +1,18 @@
 package hexagonal.core.domain.usecase;
 
+import hexagonal.core.domain.service.ClienteService;
 import hexagonal.ports.in.DeleteClienteInputPort;
-import hexagonal.ports.out.ClienteRepositoryPort;
 
 public class DeleteClienteUseCase implements DeleteClienteInputPort {
-    private final ClienteRepositoryPort repo;
+    private final ClienteService service;
 
-    public DeleteClienteUseCase(ClienteRepositoryPort repo) {
-        this.repo = repo;
+    public DeleteClienteUseCase(ClienteService service) {
+        this.service = service;
     }
 
     @Override
     public void execute(Long id) {
-        repo.deleteById(id);
+        service.delete(id);
     }
 
 }

@@ -1,19 +1,18 @@
 package hexagonal.core.domain.usecase;
 
 import hexagonal.core.domain.model.Cliente;
+import hexagonal.core.domain.service.ClienteService;
 import hexagonal.ports.in.CreateClienteInputPort;
-import hexagonal.ports.out.ClienteRepositoryPort;
 
 public class CreateClienteUseCase implements CreateClienteInputPort {
-    private final ClienteRepositoryPort repo;
+    private final ClienteService service;
 
-    public CreateClienteUseCase(ClienteRepositoryPort repo) {
-        this.repo = repo;
+    public CreateClienteUseCase(ClienteService service) {
+        this.service = service;
     }
 
     @Override
     public Cliente execute(String nome, String email, String telefone, String senha) {
-        Cliente c = new Cliente(nome, email, telefone, senha);
-        return repo.save(c);
+        return service.create(nome, email, telefone, senha);
     }
 }
