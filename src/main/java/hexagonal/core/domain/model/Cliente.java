@@ -12,6 +12,8 @@ public class Cliente {
     private List<Locacao> locacoes = new ArrayList<>();
     private List<UtilizacaoConsole> utilizacoes = new ArrayList<>();
 
+    public Cliente() {}
+
     public Cliente(String nome, String email, String telefone, String senha) {
         this.nome = nome;
         this.email = email;

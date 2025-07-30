@@ -7,4 +7,5 @@ import java.util.Optional;
 public interface ClienteRepositoryPort {
     Cliente save(Cliente cliente);
     Optional<Cliente> findById(Long id);
+    void deleteById(Long id);
 }

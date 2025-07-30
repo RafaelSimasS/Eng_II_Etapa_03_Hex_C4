@@ -30,4 +30,8 @@ public class ClienteRepositoryAdapter implements ClienteRepositoryPort {
         ClienteEntity saved = jpa.save(ent);
         return mapper.toDomain(saved);
     }
+    @Override
+    public void deleteById(Long id) {
+        jpa.deleteById(id);
+    }
 }

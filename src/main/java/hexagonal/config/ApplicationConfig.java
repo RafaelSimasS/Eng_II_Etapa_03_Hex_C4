@@ -4,14 +4,10 @@ import hexagonal.adapters.out.repositories.mapper.JogoMapper;
 import hexagonal.adapters.out.repositories.mapper.JogoPlataformaMapper;
 import hexagonal.adapters.out.repositories.mapper.PlataformaMapper;
 import hexagonal.core.domain.service.LocacaoService;
-import hexagonal.core.domain.usecase.CalcularCustoTotalLocacaoUseCase;
-import hexagonal.core.domain.usecase.CriarLocacaoUseCase;
-import hexagonal.core.domain.usecase.InserirJogoLocacaoUseCase;
+import hexagonal.core.domain.usecase.*;
+import hexagonal.ports.in.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import hexagonal.ports.in.CalcularCustoTotalLocacaoInputPort;
-import hexagonal.ports.in.CriarLocacaoInputPort;
-import hexagonal.ports.in.InserirJogoLocacaoInputPort;
 import hexagonal.ports.out.ClienteRepositoryPort;
 import hexagonal.ports.out.JogoPlataformaRepositoryPort;
 import hexagonal.ports.out.LocacaoRepositoryPort;
@@ -35,8 +31,6 @@ public class ApplicationConfig {
         return new JogoPlataformaMapper(jogoMapper, plataformaMapper);
     }
 
-
-
     @Bean
     public LocacaoService servicoDeLocacao(ClienteRepositoryPort clienteRepo,
                                            LocacaoRepositoryPort locacaoRepo,
@@ -58,4 +52,28 @@ public class ApplicationConfig {
     public CalcularCustoTotalLocacaoInputPort calcularCustoTotalLocacaoUseCase(LocacaoService servico) {
         return new CalcularCustoTotalLocacaoUseCase(servico);
     }
+
+    @Bean
+    public CreateClienteInputPort createClienteUseCase(ClienteRepositoryPort repo) {
+        return new CreateClienteUseCase(repo);
+    }
+
+    @Bean
+    public GetClienteInputPort getClienteUseCase(ClienteRepositoryPort repo) {
+        return new GetClienteUseCase(repo);
+    }
+
+    @Bean
+    public UpdateClienteInputPort updateClienteUseCase(ClienteRepositoryPort repo) {
+        return new UpdateClienteUseCase(repo);
+    }
+
+    @Bean
+    public DeleteClienteInputPort deleteClienteUseCase(ClienteRepositoryPort repo) {
+        return new DeleteClienteUseCase(repo);
+    }
+
+
+
+
 }

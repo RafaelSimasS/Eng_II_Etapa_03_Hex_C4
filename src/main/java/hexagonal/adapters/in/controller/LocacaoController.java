@@ -1,5 +1,7 @@
 package hexagonal.adapters.in.controller;
 
+import hexagonal.adapters.in.controller.request.LocacaoAddJogoRequest;
+import hexagonal.adapters.in.controller.request.LocacaoCreateRequest;
 import hexagonal.core.domain.model.Locacao;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,10 +31,8 @@ public class LocacaoController {
     }
 
     @PostMapping
-    public ResponseEntity<Locacao> criar(@RequestBody Map<String, String> body) {
-        Long clienteId   = Long.valueOf(body.get("clienteId"));
-        LocalDate data   = LocalDate.parse(body.get("dataLocacao"));
-        Locacao loc = criarLocacao.execute(clienteId, data);
+    public ResponseEntity<Locacao> criar(@RequestBody LocacaoCreateRequest req) {
+        Locacao loc = criarLocacao.execute(req.getClienteId(), req.getDataLocacao());
         return ResponseEntity
                 .created(URI.create("/locacoes/" + loc.getId()))
                 .body(loc);
@@ -41,12 +41,14 @@ public class LocacaoController {
     @PostMapping("/{id}/jogos")
     public ResponseEntity<Locacao> adicionarJogo(
             @PathVariable("id") Long locacaoId,
-            @RequestBody Map<String, String> body
+            @RequestBody LocacaoAddJogoRequest req
     ) {
-        Long jogoPlatId = Long.valueOf(body.get("jogoPlataformaId"));
-        int dias        = Integer.parseInt(body.get("dias"));
-        int qtde        = Integer.parseInt(body.get("quantidade"));
-        Locacao updated = inserirJogo.execute(locacaoId, jogoPlatId, dias, qtde);
+        Locacao updated = inserirJogo.execute(
+                locacaoId,
+                req.getJogoPlataformaId(),
+                req.getDias(),
+                req.getQuantidade()
+        );
         return ResponseEntity.ok(updated);
     }
 
