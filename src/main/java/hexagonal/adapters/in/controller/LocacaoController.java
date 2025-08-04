@@ -10,7 +10,6 @@ import hexagonal.ports.in.CriarLocacaoInputPort;
 import hexagonal.ports.in.InserirJogoLocacaoInputPort;
 
 import java.net.URI;
-import java.time.LocalDate;
 import java.util.Map;
 
 @RestController
@@ -46,8 +45,7 @@ public class LocacaoController {
         Locacao updated = inserirJogo.execute(
                 locacaoId,
                 req.getJogoPlataformaId(),
-                req.getDias(),
-                req.getQuantidade()
+                req.getDias()
         );
         return ResponseEntity.ok(updated);
     }

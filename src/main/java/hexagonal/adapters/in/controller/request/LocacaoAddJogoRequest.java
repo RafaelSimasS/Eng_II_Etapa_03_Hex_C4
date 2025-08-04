@@ -3,7 +3,6 @@ package hexagonal.adapters.in.controller.request;
 public class LocacaoAddJogoRequest {
     private Long jogoPlataformaId;
     private int dias;
-    private int quantidade;
 
     public LocacaoAddJogoRequest() {}
 
@@ -21,10 +20,4 @@ public class LocacaoAddJogoRequest {
         this.dias = dias;
     }
 
-    public int getQuantidade() {
-        return quantidade;
-    }
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
 }

@@ -15,8 +15,8 @@ public class InserirJogoLocacaoUseCase implements InserirJogoLocacaoInputPort {
     @Override
     public Locacao execute(Long locacaoId,
                            Long jogoPlataformaId,
-                           int dias,
-                           int quantidade) {
-        return servico.adicionarJogoALocacao(locacaoId, jogoPlataformaId, dias, quantidade);
+                           int dias
+                           ) {
+        return servico.adicionarJogoALocacao(locacaoId, jogoPlataformaId, dias);
     }
 }

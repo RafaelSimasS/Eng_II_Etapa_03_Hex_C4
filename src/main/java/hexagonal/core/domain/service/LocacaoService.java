@@ -32,15 +32,15 @@ public class LocacaoService {
     }
     public Locacao adicionarJogoALocacao(Long locacaoId,
                                          Long jogoPlataformaId,
-                                         int dias,
-                                         int quantidade) {
+                                         int dias
+                                         ) {
         Locacao locacao = locacaoRepo.findById(locacaoId)
                 .orElseThrow(() -> new IllegalArgumentException("Locação não encontrada"));
 
         JogoPlataforma jp = jogoPlatRepo.findById(jogoPlataformaId)
                 .orElseThrow(() -> new IllegalArgumentException("JogoPlataforma não encontrado"));
 
-        ItemLocacao item = new ItemLocacao(jp, dias, quantidade);
+        ItemLocacao item = new ItemLocacao(jp, dias);
         locacao.addItem(item);
 
         return locacaoRepo.save(locacao);
